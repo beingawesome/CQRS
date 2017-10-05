@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Cqrs.Queries.Messaging</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cqrs.Queries.Handlers\Cqrs.Queries.Handlers.csproj" />
+    <ProjectReference Include="..\Cqrs.Queries.Messaging\Cqrs.Queries.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>
