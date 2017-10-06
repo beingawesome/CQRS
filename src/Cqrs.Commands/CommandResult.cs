@@ -12,10 +12,13 @@ namespace Cqrs.Commands
     {
         internal CommandResult(bool success, Commit version, IEnumerable<CommandMessage> errors, IEnumerable<CommandMessage> warnings)
         {
+            IsSuccess = success;
             Version = version;
             Errors = errors?.ToList() ?? Enumerable.Empty<CommandMessage>();
             Warnings = warnings?.ToList() ?? Enumerable.Empty<CommandMessage>();
         }
+
+        public bool IsSuccess { get; }
 
         public IEnumerable<CommandMessage> Errors { get; }
 
