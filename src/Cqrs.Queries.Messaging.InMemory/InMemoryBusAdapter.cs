@@ -15,8 +15,7 @@ namespace Cqrs.Queries.Messaging
         public Task<TResult> ExecuteAsync<TQuery, TResult>(TQuery query, IReadOnlyMetadata metadata) where TQuery : Query<TResult>
         {
             var handler = _handlers.Build<TQuery, TResult>();
-
-
+            
             return handler.ExecuteAsync(query, metadata);
         }
     }

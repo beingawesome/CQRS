@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cqrs.Commands\Cqrs.Commands.csproj" />
+    <ProjectReference Include="..\Cqrs.Metadata\Cqrs.Metadata.csproj" />
+  </ItemGroup>
+
+</Project>
